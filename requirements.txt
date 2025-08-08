@@ -16,4 +16,4 @@ cachetools>=5.3.2
 prometheus-client>=0.19.0
 prometheus-fastapi-instrumentator>=6.1.0
 python-multipart>=0.0.6
-spacy>=3.5.0,<3.6.0
+spacy>=3.7.2
