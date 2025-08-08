@@ -582,6 +582,7 @@ async def run_document_qa(request: AnswerRequest, background_tasks: BackgroundTa
             answers=answers,
             message=f"Successfully answered {len(answers)} questions for document at {doc_url}."
         )
+        # hello
     except Exception as e:
         logger.error(f"Failed to process questions: {e}", extra={"request_id": req.state.request_id, "user_id": req.state.user_id})
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred while processing the questions.")
